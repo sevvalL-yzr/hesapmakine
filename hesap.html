@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+      <style>
+ *{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    width: 850px;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.hesapmakinesi{
+  background:transparent;
+  padding: 20px;
+  border: 1px solid  #ccc;
+  box-shadow: 0 3px 15px black;
+  border-radius: 16px;
+
+}
+
+
+#result{
+    width: 350px;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px black;
+    border-radius: 5px;
+   
+}
+
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: aqua;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px grey;
+    cursor: pointer;
+}
+button:hover{
+    background-color: pink;
+}
+
+.clear{
+    background-color: sandybrown;
+    color: grey;
+}
+.sayı {
+    background-color:gray;
+    color: black;
+    
+}
+.esit{
+    background-color: blue;
+   color: black;
+}
+.operator{
+    background-color: brown;
+    color: black;
+
+}
+
+.ondalık{
+    background-color: red;
+    grid-row: span 3;
+
+}
+#sıfır{
+    align-items:center;
+    
+    
+}
+
+      </style>
+    </head>
+    <body>
+        <div class="hesap makinesi">
+            <input type="text" id="result" readonly >
+            <div class="butonlar">
+            <button class="clear">AC</button>
+            <button class="operator">/</button>
+            <button class="operator">*</button>
+           
+            
+
+            <br>
+            <button class="sayı">7</button>
+            <button class="sayı">8</button>
+            <button class="sayı">9</button>
+            <button class="operator">+</button>
+            <br>
+            <button class="sayı">4</button>
+            <button class="sayı">5</button>
+            <button class="sayı">6</button>
+            <button class="operator">-</button>
+            
+            
+            <br>
+            <button class="sayı">1</button>
+            <button class="sayı">2</button>
+            <button class="sayı">3</button>
+            <button class="esit">=</button>
+            
+            <br>
+            
+            <button class="ondalık">.</button>
+            <button class="sayı">0</button>
+            <button class="operator">%</button>
+            
+          
+           
+        
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+        
+    
+    </body>
+   
+</html>
